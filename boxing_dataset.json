@@ -1,0 +1,64 @@
+{
+  "train": [
+    {
+      "instruction": "Who won the fight between Mike Tyson and Evander Holyfield in 1996?",
+      "input": "",
+      "output": "Evander Holyfield won the fight by TKO in the 11th round."
+    },
+    {
+      "instruction": "List three notable fights of Muhammad Ali.",
+      "input": "",
+      "output": "1. Ali vs. Sonny Liston (1964)\n2. Ali vs. Joe Frazier (1971)\n3. Ali vs. George Foreman (1974)"
+    },
+    {
+      "instruction": "Who is considered the GOAT of boxing?",
+      "input": "",
+      "output": "Many consider Muhammad Ali the GOAT due to his skill, impact, and cultural influence."
+    },
+    {
+      "instruction": "Summarize Canelo Alvarez's professional boxing achievements.",
+      "input": "",
+      "output": "Canelo Alvarez is a multiple-weight world champion with titles in light middleweight, middleweight, super middleweight, and light heavyweight."
+    },
+    {
+      "instruction": "Who won the 'Fight of the Century' between Ali and Frazier in 1971?",
+      "input": "",
+      "output": "Joe Frazier defeated Muhammad Ali by unanimous decision."
+    },
+    {
+      "instruction": "Name a famous fight of Mike Tyson in 1986.",
+      "input": "",
+      "output": "Mike Tyson defeated Trevor Berbick to become the youngest heavyweight champion at age 20."
+    },
+    {
+      "instruction": "Who did Floyd Mayweather fight in 2015?",
+      "input": "",
+      "output": "Floyd Mayweather fought Manny Pacquiao and won by unanimous decision."
+    },
+    {
+      "instruction": "List three famous heavyweight champions.",
+      "input": "",
+      "output": "1. Muhammad Ali\n2. Mike Tyson\n3. Lennox Lewis"
+    },
+    {
+      "instruction": "What is Manny Pacquiao's notable achievement?",
+      "input": "",
+      "output": "Manny Pacquiao is the only boxer in history to win world titles in eight different weight divisions."
+    },
+    {
+      "instruction": "Who did Mike Tyson fight in 1990?",
+      "input": "",
+      "output": "Mike Tyson fought James 'Buster' Douglas and lost by knockout."
+    },
+    {
+      "instruction": "Which boxer had the famous 'Rumble in the Jungle' fight?",
+      "input": "",
+      "output": "Muhammad Ali fought George Foreman in the 'Rumble in the Jungle' and won by knockout."
+    },
+    {
+      "instruction": "Summarize the career of Sugar Ray Leonard.",
+      "input": "",
+      "output": "Sugar Ray Leonard was a multi-weight world champion known for his speed, skill, and memorable fights in the 1980s, including bouts against Hearns, Hagler, and Duran."
+    }
+  ]
+}
