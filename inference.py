@@ -103,7 +103,7 @@ model: AutoModelForCausalLM = AutoModelForCausalLM.from_pretrained(
 )
 
 df: pd.DataFrame = pd.read_csv("arxiv_dataset.csv")
-# Filter rows to only get dataframe of VALID_CLASSES
+# Filter rows to only VALID_CLASSES
 df: pd.DataFrame = df[df["Category Description"].isin(VALID_CLASSES)]
 random_seed=35
 # print(df)
@@ -117,11 +117,11 @@ df_train: pd.DataFrame = df[:train_len]
 df_test: pd.DataFrame = df[train_len:]
 
 # use build_prompts to add a "prompt" column before Dataset creation
-df_test: pd.DataFrame = build_prompts(df_test)
+df_test = build_prompts(df_test)
 df_test.to_csv("test.csv", index=False) #save as CSV wtihout row numbers
 
-test_dataset: Dataset = Dataset.from_pandas(df_test)
-test_dataloader: DataLoader = DataLoader(
+test_dataset = Dataset.from_pandas(df_test)
+test_dataloader = DataLoader(
     test_dataset, 
     batch_size=16, 
     shuffle=False,
@@ -134,6 +134,7 @@ print("\n".join([f"{k} = {v}" for k,v in metrics.items()]))
 
 
 row: pd.Series = df_test.iloc[0]
+# print("row: ", row)
 
 print("\n=== SINGLE PAPER TEST ===")
 print("GROUND TRUTH:", row["Category Description"])
