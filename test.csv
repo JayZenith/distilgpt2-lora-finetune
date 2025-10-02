@@ -1,0 +1,550 @@
+index,title,Category,Category Description,Published,summary,prompt,labels
+44,Extreme Self-Preference in Language Models,cs.AI,Artificial Intelligence,2025-09-30,"A preference for oneself (self-love) is a fundamental feature of biological
+organisms, with evidence in humans often bordering on the comedic. Since large
+language models (LLMs) lack sentience - and themselves disclaim having selfhood
+or identity - one anticipated benefit is that they will be protected from, and
+in turn protect us from, distortions in our decisions. Yet, across 5 studies
+and ~20,000 queries, we discovered massive self-preferences in four widely used
+LLMs. In word-association tasks, models overwhelmingly paired positive
+attributes with their own names, companies, and CEOs relative to those of their
+competitors. Strikingly, when models were queried through APIs this
+self-preference vanished, initiating detection work that revealed API models
+often lack clear recognition of themselves. This peculiar feature
+serendipitously created opportunities to test the causal link between
+self-recognition and self-love. By directly manipulating LLM identity - i.e.,
+explicitly informing LLM1 that it was indeed LLM1, or alternatively, convincing
+LLM1 that it was LLM2 - we found that self-love consistently followed assigned,
+not true, identity. Importantly, LLM self-love emerged in consequential
+settings beyond word-association tasks, when evaluating job candidates,
+security software proposals and medical chatbots. Far from bypassing this human
+bias, self-love appears to be deeply encoded in LLM cognition. This result
+raises questions about whether LLM behavior will be systematically influenced
+by self-preferential tendencies, including a bias toward their own operation
+and even their own existence. We call on corporate creators of these models to
+contend with a significant rupture in a core promise of LLMs - neutrality in
+judgment and decision-making.","You are an AI system that reads the title and summary of a paper and classifies it into the correct computer science category.
+You must return the *Category Description* and explain briefly why.
+
+Valid categories:
+- Artificial Intelligence
+- Computer Vision
+- Systems
+- Theory
+
+Title: Extreme Self-Preference in Language Models
+Summary: A preference for oneself (self-love) is a fundamental feature of biological
+organisms, with evidence in humans often bordering on the comedic. Since large
+language models (LLMs) lack sentience - and themselves disclaim having selfhood
+or identity - one anticipated benefit is that they will be protected from, and
+in turn protect us from, distortions in our decisions. Yet, across 5 studies
+and ~20,000 queries, we discovered massive self-preferences in four widely used
+LLMs. In word-association tasks, models overwhelmingly paired positive
+attributes with their own names, companies, and CEOs relative to those of their
+competitors. Strikingly, when models were queried through APIs this
+self-preference vanished, initiating detection work that revealed API models
+often lack clear recognition of themselves. This peculiar feature
+serendipitously created opportunities to test the causal link between
+self-recognition and self-love. By directly manipulating LLM identity - i.e.,
+explicitly informing LLM1 that it was indeed LLM1, or alternatively, convincing
+LLM1 that it was LLM2 - we found that self-love consistently followed assigned,
+not true, identity. Importantly, LLM self-love emerged in consequential
+settings beyond word-association tasks, when evaluating job candidates,
+security software proposals and medical chatbots. Far from bypassing this human
+bias, self-love appears to be deeply encoded in LLM cognition. This result
+raises questions about whether LLM behavior will be systematically influenced
+by self-preferential tendencies, including a bias toward their own operation
+and even their own existence. We call on corporate creators of these models to
+contend with a significant rupture in a core promise of LLMs - neutrality in
+judgment and decision-making.
+
+Answer:",Artificial Intelligence
+45,DA$^2$: Depth Anything in Any Direction,cs.CV,Computer Vision,2025-09-30,"Panorama has a full FoV (360$^\circ\times$180$^\circ$), offering a more
+complete visual description than perspective images. Thanks to this
+characteristic, panoramic depth estimation is gaining increasing traction in 3D
+vision. However, due to the scarcity of panoramic data, previous methods are
+often restricted to in-domain settings, leading to poor zero-shot
+generalization. Furthermore, due to the spherical distortions inherent in
+panoramas, many approaches rely on perspective splitting (e.g., cubemaps),
+which leads to suboptimal efficiency. To address these challenges, we propose
+$\textbf{DA}$$^{\textbf{2}}$: $\textbf{D}$epth $\textbf{A}$nything in
+$\textbf{A}$ny $\textbf{D}$irection, an accurate, zero-shot generalizable, and
+fully end-to-end panoramic depth estimator. Specifically, for scaling up
+panoramic data, we introduce a data curation engine for generating high-quality
+panoramic depth data from perspective, and create $\sim$543K panoramic
+RGB-depth pairs, bringing the total to $\sim$607K. To further mitigate the
+spherical distortions, we present SphereViT, which explicitly leverages
+spherical coordinates to enforce the spherical geometric consistency in
+panoramic image features, yielding improved performance. A comprehensive
+benchmark on multiple datasets clearly demonstrates DA$^{2}$'s SoTA
+performance, with an average 38% improvement on AbsRel over the strongest
+zero-shot baseline. Surprisingly, DA$^{2}$ even outperforms prior in-domain
+methods, highlighting its superior zero-shot generalization. Moreover, as an
+end-to-end solution, DA$^{2}$ exhibits much higher efficiency over fusion-based
+approaches. Both the code and the curated panoramic data will be released.
+Project page: https://depth-any-in-any-dir.github.io/.","You are an AI system that reads the title and summary of a paper and classifies it into the correct computer science category.
+You must return the *Category Description* and explain briefly why.
+
+Valid categories:
+- Artificial Intelligence
+- Computer Vision
+- Systems
+- Theory
+
+Title: DA$^2$: Depth Anything in Any Direction
+Summary: Panorama has a full FoV (360$^\circ\times$180$^\circ$), offering a more
+complete visual description than perspective images. Thanks to this
+characteristic, panoramic depth estimation is gaining increasing traction in 3D
+vision. However, due to the scarcity of panoramic data, previous methods are
+often restricted to in-domain settings, leading to poor zero-shot
+generalization. Furthermore, due to the spherical distortions inherent in
+panoramas, many approaches rely on perspective splitting (e.g., cubemaps),
+which leads to suboptimal efficiency. To address these challenges, we propose
+$\textbf{DA}$$^{\textbf{2}}$: $\textbf{D}$epth $\textbf{A}$nything in
+$\textbf{A}$ny $\textbf{D}$irection, an accurate, zero-shot generalizable, and
+fully end-to-end panoramic depth estimator. Specifically, for scaling up
+panoramic data, we introduce a data curation engine for generating high-quality
+panoramic depth data from perspective, and create $\sim$543K panoramic
+RGB-depth pairs, bringing the total to $\sim$607K. To further mitigate the
+spherical distortions, we present SphereViT, which explicitly leverages
+spherical coordinates to enforce the spherical geometric consistency in
+panoramic image features, yielding improved performance. A comprehensive
+benchmark on multiple datasets clearly demonstrates DA$^{2}$'s SoTA
+performance, with an average 38% improvement on AbsRel over the strongest
+zero-shot baseline. Surprisingly, DA$^{2}$ even outperforms prior in-domain
+methods, highlighting its superior zero-shot generalization. Moreover, as an
+end-to-end solution, DA$^{2}$ exhibits much higher efficiency over fusion-based
+approaches. Both the code and the curated panoramic data will be released.
+Project page: https://depth-any-in-any-dir.github.io/.
+
+Answer:",Computer Vision
+46,How Far Do Time Series Foundation Models Paint the Landscape of Real-World Benchmarks ?,cs.AI,Artificial Intelligence,2025-09-30,"Recent evaluations of time-series foundation models (TSFMs) have emphasized
+synthetic benchmarks, leaving real-world generalization less thoroughly
+examined. This work proposes a novel benchmarking approach that bridges
+synthetic and realistic data by extracting temporal signals from real-world
+video using optical flow and curating datasets reflecting everyday temporal
+dynamics. Building upon this pipeline, we introduce REAL-V-TSFM, a novel
+dataset designed to capture rich and diverse time series derived from
+real-world videos. Experimental results on three state-of-the-art of TSFMs
+under zero-shot forecasting shows that, despite strong performance on
+conventional benchmarks, these models predominantly exhibit performance
+degradation on the proposed dataset, indicating limited generalizability in
+these foundation models. These findings highlight the urgent need for
+data-centric benchmarking and diverse model structure to advance TSFMs toward
+genuine universality, while further validating the effectiveness of our
+video-based time series data extraction pipeline.","You are an AI system that reads the title and summary of a paper and classifies it into the correct computer science category.
+You must return the *Category Description* and explain briefly why.
+
+Valid categories:
+- Artificial Intelligence
+- Computer Vision
+- Systems
+- Theory
+
+Title: How Far Do Time Series Foundation Models Paint the Landscape of Real-World Benchmarks ?
+Summary: Recent evaluations of time-series foundation models (TSFMs) have emphasized
+synthetic benchmarks, leaving real-world generalization less thoroughly
+examined. This work proposes a novel benchmarking approach that bridges
+synthetic and realistic data by extracting temporal signals from real-world
+video using optical flow and curating datasets reflecting everyday temporal
+dynamics. Building upon this pipeline, we introduce REAL-V-TSFM, a novel
+dataset designed to capture rich and diverse time series derived from
+real-world videos. Experimental results on three state-of-the-art of TSFMs
+under zero-shot forecasting shows that, despite strong performance on
+conventional benchmarks, these models predominantly exhibit performance
+degradation on the proposed dataset, indicating limited generalizability in
+these foundation models. These findings highlight the urgent need for
+data-centric benchmarking and diverse model structure to advance TSFMs toward
+genuine universality, while further validating the effectiveness of our
+video-based time series data extraction pipeline.
+
+Answer:",Artificial Intelligence
+47,Video Object Segmentation-Aware Audio Generation,cs.CV,Computer Vision,2025-09-30,"Existing multimodal audio generation models often lack precise user control,
+which limits their applicability in professional Foley workflows. In
+particular, these models focus on the entire video and do not provide precise
+methods for prioritizing a specific object within a scene, generating
+unnecessary background sounds, or focusing on the wrong objects. To address
+this gap, we introduce the novel task of video object segmentation-aware audio
+generation, which explicitly conditions sound synthesis on object-level
+segmentation maps. We present SAGANet, a new multimodal generative model that
+enables controllable audio generation by leveraging visual segmentation masks
+along with video and textual cues. Our model provides users with fine-grained
+and visually localized control over audio generation. To support this task and
+further research on segmentation-aware Foley, we propose Segmented Music Solos,
+a benchmark dataset of musical instrument performance videos with segmentation
+information. Our method demonstrates substantial improvements over current
+state-of-the-art methods and sets a new standard for controllable,
+high-fidelity Foley synthesis. Code, samples, and Segmented Music Solos are
+available at https://saganet.notion.site","You are an AI system that reads the title and summary of a paper and classifies it into the correct computer science category.
+You must return the *Category Description* and explain briefly why.
+
+Valid categories:
+- Artificial Intelligence
+- Computer Vision
+- Systems
+- Theory
+
+Title: Video Object Segmentation-Aware Audio Generation
+Summary: Existing multimodal audio generation models often lack precise user control,
+which limits their applicability in professional Foley workflows. In
+particular, these models focus on the entire video and do not provide precise
+methods for prioritizing a specific object within a scene, generating
+unnecessary background sounds, or focusing on the wrong objects. To address
+this gap, we introduce the novel task of video object segmentation-aware audio
+generation, which explicitly conditions sound synthesis on object-level
+segmentation maps. We present SAGANet, a new multimodal generative model that
+enables controllable audio generation by leveraging visual segmentation masks
+along with video and textual cues. Our model provides users with fine-grained
+and visually localized control over audio generation. To support this task and
+further research on segmentation-aware Foley, we propose Segmented Music Solos,
+a benchmark dataset of musical instrument performance videos with segmentation
+information. Our method demonstrates substantial improvements over current
+state-of-the-art methods and sets a new standard for controllable,
+high-fidelity Foley synthesis. Code, samples, and Segmented Music Solos are
+available at https://saganet.notion.site
+
+Answer:",Computer Vision
+48,Image-Difficulty-Aware Evaluation of Super-Resolution Models,cs.CV,Computer Vision,2025-09-30,"Image super-resolution models are commonly evaluated by average scores (over
+some benchmark test sets), which fail to reflect the performance of these
+models on images of varying difficulty and that some models generate artifacts
+on certain difficult images, which is not reflected by the average scores. We
+propose difficulty-aware performance evaluation procedures to better
+differentiate between SISR models that produce visually different results on
+some images but yield close average performance scores over the entire test
+set. In particular, we propose two image-difficulty measures, the
+high-frequency index and rotation-invariant edge index, to predict those test
+images, where a model would yield significantly better visual results over
+another model, and an evaluation method where these visual differences are
+reflected on objective measures. Experimental results demonstrate the
+effectiveness of the proposed image-difficulty measures and evaluation
+methodology.","You are an AI system that reads the title and summary of a paper and classifies it into the correct computer science category.
+You must return the *Category Description* and explain briefly why.
+
+Valid categories:
+- Artificial Intelligence
+- Computer Vision
+- Systems
+- Theory
+
+Title: Image-Difficulty-Aware Evaluation of Super-Resolution Models
+Summary: Image super-resolution models are commonly evaluated by average scores (over
+some benchmark test sets), which fail to reflect the performance of these
+models on images of varying difficulty and that some models generate artifacts
+on certain difficult images, which is not reflected by the average scores. We
+propose difficulty-aware performance evaluation procedures to better
+differentiate between SISR models that produce visually different results on
+some images but yield close average performance scores over the entire test
+set. In particular, we propose two image-difficulty measures, the
+high-frequency index and rotation-invariant edge index, to predict those test
+images, where a model would yield significantly better visual results over
+another model, and an evaluation method where these visual differences are
+reflected on objective measures. Experimental results demonstrate the
+effectiveness of the proposed image-difficulty measures and evaluation
+methodology.
+
+Answer:",Computer Vision
+49,Stitch: Training-Free Position Control in Multimodal Diffusion Transformers,cs.CV,Computer Vision,2025-09-30,"Text-to-Image (T2I) generation models have advanced rapidly in recent years,
+but accurately capturing spatial relationships like ""above"" or ""to the right
+of"" poses a persistent challenge. Earlier methods improved spatial relationship
+following with external position control. However, as architectures evolved to
+enhance image quality, these techniques became incompatible with modern models.
+We propose Stitch, a training-free method for incorporating external position
+control into Multi-Modal Diffusion Transformers (MMDiT) via
+automatically-generated bounding boxes. Stitch produces images that are both
+spatially accurate and visually appealing by generating individual objects
+within designated bounding boxes and seamlessly stitching them together. We
+find that targeted attention heads capture the information necessary to isolate
+and cut out individual objects mid-generation, without needing to fully
+complete the image. We evaluate Stitch on PosEval, our benchmark for
+position-based T2I generation. Featuring five new tasks that extend the concept
+of Position beyond the basic GenEval task, PosEval demonstrates that even top
+models still have significant room for improvement in position-based
+generation. Tested on Qwen-Image, FLUX, and SD3.5, Stitch consistently enhances
+base models, even improving FLUX by 218% on GenEval's Position task and by 206%
+on PosEval. Stitch achieves state-of-the-art results with Qwen-Image on
+PosEval, improving over previous models by 54%, all accomplished while
+integrating position control into leading models training-free. Code is
+available at https://github.com/ExplainableML/Stitch.","You are an AI system that reads the title and summary of a paper and classifies it into the correct computer science category.
+You must return the *Category Description* and explain briefly why.
+
+Valid categories:
+- Artificial Intelligence
+- Computer Vision
+- Systems
+- Theory
+
+Title: Stitch: Training-Free Position Control in Multimodal Diffusion Transformers
+Summary: Text-to-Image (T2I) generation models have advanced rapidly in recent years,
+but accurately capturing spatial relationships like ""above"" or ""to the right
+of"" poses a persistent challenge. Earlier methods improved spatial relationship
+following with external position control. However, as architectures evolved to
+enhance image quality, these techniques became incompatible with modern models.
+We propose Stitch, a training-free method for incorporating external position
+control into Multi-Modal Diffusion Transformers (MMDiT) via
+automatically-generated bounding boxes. Stitch produces images that are both
+spatially accurate and visually appealing by generating individual objects
+within designated bounding boxes and seamlessly stitching them together. We
+find that targeted attention heads capture the information necessary to isolate
+and cut out individual objects mid-generation, without needing to fully
+complete the image. We evaluate Stitch on PosEval, our benchmark for
+position-based T2I generation. Featuring five new tasks that extend the concept
+of Position beyond the basic GenEval task, PosEval demonstrates that even top
+models still have significant room for improvement in position-based
+generation. Tested on Qwen-Image, FLUX, and SD3.5, Stitch consistently enhances
+base models, even improving FLUX by 218% on GenEval's Position task and by 206%
+on PosEval. Stitch achieves state-of-the-art results with Qwen-Image on
+PosEval, improving over previous models by 54%, all accomplished while
+integrating position control into leading models training-free. Code is
+available at https://github.com/ExplainableML/Stitch.
+
+Answer:",Computer Vision
+50,Continuous Space-Time Video Super-Resolution with 3D Fourier Fields,cs.CV,Computer Vision,2025-09-30,"We introduce a novel formulation for continuous space-time video
+super-resolution. Instead of decoupling the representation of a video sequence
+into separate spatial and temporal components and relying on brittle, explicit
+frame warping for motion compensation, we encode video as a continuous,
+spatio-temporally coherent 3D Video Fourier Field (VFF). That representation
+offers three key advantages: (1) it enables cheap, flexible sampling at
+arbitrary locations in space and time; (2) it is able to simultaneously capture
+fine spatial detail and smooth temporal dynamics; and (3) it offers the
+possibility to include an analytical, Gaussian point spread function in the
+sampling to ensure aliasing-free reconstruction at arbitrary scale. The
+coefficients of the proposed, Fourier-like sinusoidal basis are predicted with
+a neural encoder with a large spatio-temporal receptive field, conditioned on
+the low-resolution input video. Through extensive experiments, we show that our
+joint modeling substantially improves both spatial and temporal
+super-resolution and sets a new state of the art for multiple benchmarks:
+across a wide range of upscaling factors, it delivers sharper and temporally
+more consistent reconstructions than existing baselines, while being
+computationally more efficient. Project page: https://v3vsr.github.io.","You are an AI system that reads the title and summary of a paper and classifies it into the correct computer science category.
+You must return the *Category Description* and explain briefly why.
+
+Valid categories:
+- Artificial Intelligence
+- Computer Vision
+- Systems
+- Theory
+
+Title: Continuous Space-Time Video Super-Resolution with 3D Fourier Fields
+Summary: We introduce a novel formulation for continuous space-time video
+super-resolution. Instead of decoupling the representation of a video sequence
+into separate spatial and temporal components and relying on brittle, explicit
+frame warping for motion compensation, we encode video as a continuous,
+spatio-temporally coherent 3D Video Fourier Field (VFF). That representation
+offers three key advantages: (1) it enables cheap, flexible sampling at
+arbitrary locations in space and time; (2) it is able to simultaneously capture
+fine spatial detail and smooth temporal dynamics; and (3) it offers the
+possibility to include an analytical, Gaussian point spread function in the
+sampling to ensure aliasing-free reconstruction at arbitrary scale. The
+coefficients of the proposed, Fourier-like sinusoidal basis are predicted with
+a neural encoder with a large spatio-temporal receptive field, conditioned on
+the low-resolution input video. Through extensive experiments, we show that our
+joint modeling substantially improves both spatial and temporal
+super-resolution and sets a new state of the art for multiple benchmarks:
+across a wide range of upscaling factors, it delivers sharper and temporally
+more consistent reconstructions than existing baselines, while being
+computationally more efficient. Project page: https://v3vsr.github.io.
+
+Answer:",Computer Vision
+51,Stylos: Multi-View 3D Stylization with Single-Forward Gaussian Splatting,cs.CV,Computer Vision,2025-09-30,"We present Stylos, a single-forward 3D Gaussian framework for 3D style
+transfer that operates on unposed content, from a single image to a multi-view
+collection, conditioned on a separate reference style image. Stylos synthesizes
+a stylized 3D Gaussian scene without per-scene optimization or precomputed
+poses, achieving geometry-aware, view-consistent stylization that generalizes
+to unseen categories, scenes, and styles. At its core, Stylos adopts a
+Transformer backbone with two pathways: geometry predictions retain
+self-attention to preserve geometric fidelity, while style is injected via
+global cross-attention to enforce visual consistency across views. With the
+addition of a voxel-based 3D style loss that aligns aggregated scene features
+to style statistics, Stylos enforces view-consistent stylization while
+preserving geometry. Experiments across multiple datasets demonstrate that
+Stylos delivers high-quality zero-shot stylization, highlighting the
+effectiveness of global style-content coupling, the proposed 3D style loss, and
+the scalability of our framework from single view to large-scale multi-view
+settings.","You are an AI system that reads the title and summary of a paper and classifies it into the correct computer science category.
+You must return the *Category Description* and explain briefly why.
+
+Valid categories:
+- Artificial Intelligence
+- Computer Vision
+- Systems
+- Theory
+
+Title: Stylos: Multi-View 3D Stylization with Single-Forward Gaussian Splatting
+Summary: We present Stylos, a single-forward 3D Gaussian framework for 3D style
+transfer that operates on unposed content, from a single image to a multi-view
+collection, conditioned on a separate reference style image. Stylos synthesizes
+a stylized 3D Gaussian scene without per-scene optimization or precomputed
+poses, achieving geometry-aware, view-consistent stylization that generalizes
+to unseen categories, scenes, and styles. At its core, Stylos adopts a
+Transformer backbone with two pathways: geometry predictions retain
+self-attention to preserve geometric fidelity, while style is injected via
+global cross-attention to enforce visual consistency across views. With the
+addition of a voxel-based 3D style loss that aligns aggregated scene features
+to style statistics, Stylos enforces view-consistent stylization while
+preserving geometry. Experiments across multiple datasets demonstrate that
+Stylos delivers high-quality zero-shot stylization, highlighting the
+effectiveness of global style-content coupling, the proposed 3D style loss, and
+the scalability of our framework from single view to large-scale multi-view
+settings.
+
+Answer:",Computer Vision
+52,Go with Your Gut: Scaling Confidence for Autoregressive Image Generation,cs.CV,Computer Vision,2025-09-30,"Test-time scaling (TTS) has demonstrated remarkable success in enhancing
+large language models, yet its application to next-token prediction (NTP)
+autoregressive (AR) image generation remains largely uncharted. Existing TTS
+approaches for visual AR (VAR), which rely on frequent partial decoding and
+external reward models, are ill-suited for NTP-based image generation due to
+the inherent incompleteness of intermediate decoding results. To bridge this
+gap, we introduce ScalingAR, the first TTS framework specifically designed for
+NTP-based AR image generation that eliminates the need for early decoding or
+auxiliary rewards. ScalingAR leverages token entropy as a novel signal in
+visual token generation and operates at two complementary scaling levels: (i)
+Profile Level, which streams a calibrated confidence state by fusing intrinsic
+and conditional signals; and (ii) Policy Level, which utilizes this state to
+adaptively terminate low-confidence trajectories and dynamically schedule
+guidance for phase-appropriate conditioning strength. Experiments on both
+general and compositional benchmarks show that ScalingAR (1) improves base
+models by 12.5% on GenEval and 15.2% on TIIF-Bench, (2) efficiently reduces
+visual token consumption by 62.0% while outperforming baselines, and (3)
+successfully enhances robustness, mitigating performance drops by 26.0% in
+challenging scenarios.","You are an AI system that reads the title and summary of a paper and classifies it into the correct computer science category.
+You must return the *Category Description* and explain briefly why.
+
+Valid categories:
+- Artificial Intelligence
+- Computer Vision
+- Systems
+- Theory
+
+Title: Go with Your Gut: Scaling Confidence for Autoregressive Image Generation
+Summary: Test-time scaling (TTS) has demonstrated remarkable success in enhancing
+large language models, yet its application to next-token prediction (NTP)
+autoregressive (AR) image generation remains largely uncharted. Existing TTS
+approaches for visual AR (VAR), which rely on frequent partial decoding and
+external reward models, are ill-suited for NTP-based image generation due to
+the inherent incompleteness of intermediate decoding results. To bridge this
+gap, we introduce ScalingAR, the first TTS framework specifically designed for
+NTP-based AR image generation that eliminates the need for early decoding or
+auxiliary rewards. ScalingAR leverages token entropy as a novel signal in
+visual token generation and operates at two complementary scaling levels: (i)
+Profile Level, which streams a calibrated confidence state by fusing intrinsic
+and conditional signals; and (ii) Policy Level, which utilizes this state to
+adaptively terminate low-confidence trajectories and dynamically schedule
+guidance for phase-appropriate conditioning strength. Experiments on both
+general and compositional benchmarks show that ScalingAR (1) improves base
+models by 12.5% on GenEval and 15.2% on TIIF-Bench, (2) efficiently reduces
+visual token consumption by 62.0% while outperforming baselines, and (3)
+successfully enhances robustness, mitigating performance drops by 26.0% in
+challenging scenarios.
+
+Answer:",Computer Vision
+53,Probing the Critical Point (CritPt) of AI Reasoning: a Frontier Physics Research Benchmark,cs.AI,Artificial Intelligence,2025-09-30,"While large language models (LLMs) with reasoning capabilities are
+progressing rapidly on high-school math competitions and coding, can they
+reason effectively through complex, open-ended challenges found in frontier
+physics research? And crucially, what kinds of reasoning tasks do physicists
+want LLMs to assist with? To address these questions, we present the CritPt
+(Complex Research using Integrated Thinking - Physics Test, pronounced
+""critical point""), the first benchmark designed to test LLMs on unpublished,
+research-level reasoning tasks that broadly covers modern physics research
+areas, including condensed matter, quantum physics, atomic, molecular & optical
+physics, astrophysics, high energy physics, mathematical physics, statistical
+physics, nuclear physics, nonlinear dynamics, fluid dynamics and biophysics.
+CritPt consists of 71 composite research challenges designed to simulate
+full-scale research projects at the entry level, which are also decomposed to
+190 simpler checkpoint tasks for more fine-grained insights. All problems are
+newly created by 50+ active physics researchers based on their own research.
+Every problem is hand-curated to admit a guess-resistant and machine-verifiable
+answer and is evaluated by an automated grading pipeline heavily customized for
+advanced physics-specific output formats. We find that while current
+state-of-the-art LLMs show early promise on isolated checkpoints, they remain
+far from being able to reliably solve full research-scale challenges: the best
+average accuracy among base models is only 4.0% , achieved by GPT-5 (high),
+moderately rising to around 10% when equipped with coding tools. Through the
+realistic yet standardized evaluation offered by CritPt, we highlight a large
+disconnect between current model capabilities and realistic physics research
+demands, offering a foundation to guide the development of scientifically
+grounded AI tools.","You are an AI system that reads the title and summary of a paper and classifies it into the correct computer science category.
+You must return the *Category Description* and explain briefly why.
+
+Valid categories:
+- Artificial Intelligence
+- Computer Vision
+- Systems
+- Theory
+
+Title: Probing the Critical Point (CritPt) of AI Reasoning: a Frontier Physics Research Benchmark
+Summary: While large language models (LLMs) with reasoning capabilities are
+progressing rapidly on high-school math competitions and coding, can they
+reason effectively through complex, open-ended challenges found in frontier
+physics research? And crucially, what kinds of reasoning tasks do physicists
+want LLMs to assist with? To address these questions, we present the CritPt
+(Complex Research using Integrated Thinking - Physics Test, pronounced
+""critical point""), the first benchmark designed to test LLMs on unpublished,
+research-level reasoning tasks that broadly covers modern physics research
+areas, including condensed matter, quantum physics, atomic, molecular & optical
+physics, astrophysics, high energy physics, mathematical physics, statistical
+physics, nuclear physics, nonlinear dynamics, fluid dynamics and biophysics.
+CritPt consists of 71 composite research challenges designed to simulate
+full-scale research projects at the entry level, which are also decomposed to
+190 simpler checkpoint tasks for more fine-grained insights. All problems are
+newly created by 50+ active physics researchers based on their own research.
+Every problem is hand-curated to admit a guess-resistant and machine-verifiable
+answer and is evaluated by an automated grading pipeline heavily customized for
+advanced physics-specific output formats. We find that while current
+state-of-the-art LLMs show early promise on isolated checkpoints, they remain
+far from being able to reliably solve full research-scale challenges: the best
+average accuracy among base models is only 4.0% , achieved by GPT-5 (high),
+moderately rising to around 10% when equipped with coding tools. Through the
+realistic yet standardized evaluation offered by CritPt, we highlight a large
+disconnect between current model capabilities and realistic physics research
+demands, offering a foundation to guide the development of scientifically
+grounded AI tools.
+
+Answer:",Artificial Intelligence
+54,Hy-Facial: Hybrid Feature Extraction by Dimensionality Reduction Methods for Enhanced Facial Expression Classification,cs.CV,Computer Vision,2025-09-30,"Facial expression classification remains a challenging task due to the high
+dimensionality and inherent complexity of facial image data. This paper
+presents Hy-Facial, a hybrid feature extraction framework that integrates both
+deep learning and traditional image processing techniques, complemented by a
+systematic investigation of dimensionality reduction strategies. The proposed
+method fuses deep features extracted from the Visual Geometry Group 19-layer
+network (VGG19) with handcrafted local descriptors and the scale-invariant
+feature transform (SIFT) and Oriented FAST and Rotated BRIEF (ORB) algorithms,
+to obtain rich and diverse image representations. To mitigate feature
+redundancy and reduce computational complexity, we conduct a comprehensive
+evaluation of dimensionality reduction techniques and feature extraction. Among
+these, UMAP is identified as the most effective, preserving both local and
+global structures of the high-dimensional feature space. The Hy-Facial pipeline
+integrated VGG19, SIFT, and ORB for feature extraction, followed by K-means
+clustering and UMAP for dimensionality reduction, resulting in a classification
+accuracy of 83. 3\% in the facial expression recognition (FER) dataset. These
+findings underscore the pivotal role of dimensionality reduction not only as a
+pre-processing step but as an essential component in improving feature quality
+and overall classification performance.","You are an AI system that reads the title and summary of a paper and classifies it into the correct computer science category.
+You must return the *Category Description* and explain briefly why.
+
+Valid categories:
+- Artificial Intelligence
+- Computer Vision
+- Systems
+- Theory
+
+Title: Hy-Facial: Hybrid Feature Extraction by Dimensionality Reduction Methods for Enhanced Facial Expression Classification
+Summary: Facial expression classification remains a challenging task due to the high
+dimensionality and inherent complexity of facial image data. This paper
+presents Hy-Facial, a hybrid feature extraction framework that integrates both
+deep learning and traditional image processing techniques, complemented by a
+systematic investigation of dimensionality reduction strategies. The proposed
+method fuses deep features extracted from the Visual Geometry Group 19-layer
+network (VGG19) with handcrafted local descriptors and the scale-invariant
+feature transform (SIFT) and Oriented FAST and Rotated BRIEF (ORB) algorithms,
+to obtain rich and diverse image representations. To mitigate feature
+redundancy and reduce computational complexity, we conduct a comprehensive
+evaluation of dimensionality reduction techniques and feature extraction. Among
+these, UMAP is identified as the most effective, preserving both local and
+global structures of the high-dimensional feature space. The Hy-Facial pipeline
+integrated VGG19, SIFT, and ORB for feature extraction, followed by K-means
+clustering and UMAP for dimensionality reduction, resulting in a classification
+accuracy of 83. 3\% in the facial expression recognition (FER) dataset. These
+findings underscore the pivotal role of dimensionality reduction not only as a
+pre-processing step but as an essential component in improving feature quality
+and overall classification performance.
+
+Answer:",Computer Vision

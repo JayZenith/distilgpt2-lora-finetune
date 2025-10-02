@@ -6,3 +6,8 @@ huggingface_hub>=0.23.0
 accelerate>=1.1.1
 arxiv>=2.2.0
 pandas>=2.0.0
+ipykernel
+matplotlib 
+seaborn 
+plotly
+bitsandbytes
