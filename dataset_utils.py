@@ -39,8 +39,8 @@ def build_prompts(df: pd.DataFrame):
         prompts.append(system_prompt + user_prompt)
 
     df = df.copy()
-    df["prompt"] = prompts
-    df["labels"] = df["Category Description"]
+    df["prompt"] = prompts #Combo of system instructions and paper title + summary
+    df["labels"] = df["Category Description"] # used as ground truth when testing
     return df
 
 

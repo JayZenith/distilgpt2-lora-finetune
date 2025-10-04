@@ -49,7 +49,7 @@ def generate_output_from_input(model, tokenizer, title, abstract):
 
 
 
-def test_model(dataloader: DataLoader, model: AutoModelForCausalLM, tokenizer: AutoTokenizer):
+def test_model(dataloader, model, tokenizer):
     comparison_df = {
         "predictions": [],
         "labels": [], #Category Description
@@ -58,7 +58,6 @@ def test_model(dataloader: DataLoader, model: AutoModelForCausalLM, tokenizer: A
     
     # loop over batches in a test dataloader 
     for batch in dataloader:
-        # HuggingFace Dataset + DataLoader returns tensors or dicts of lists
         prompts : list[str] = batch["prompt"]       # list of prompts
         labels: list[str] = batch["labels"]        # list of ground truth labels
         titles: list[str] = batch["title"]         # list of titles
@@ -88,7 +87,7 @@ model_id = "unsloth/Llama-3.2-1B"
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
 #pad on left side for valid rectangular tensor 
-tokenizer: AutoTokenizer = AutoTokenizer.from_pretrained(model_id, padding_side="left", use_auth_token=True)
+tokenizer = AutoTokenizer.from_pretrained(model_id, padding_side="left", use_auth_token=True)
 
 # Pad token = EOS (LLaMa has no special pad token)
 tokenizer.pad_token= tokenizer.eos_token
@@ -103,7 +102,6 @@ model: AutoModelForCausalLM = AutoModelForCausalLM.from_pretrained(
 )
 
 df: pd.DataFrame = pd.read_csv("arxiv_dataset.csv")
-# Filter rows to only VALID_CLASSES
 df: pd.DataFrame = df[df["Category Description"].isin(VALID_CLASSES)]
 random_seed=35
 # print(df)
@@ -116,17 +114,49 @@ train_len = int(train_size * len(df))
 df_train: pd.DataFrame = df[:train_len]
 df_test: pd.DataFrame = df[train_len:]
 
-# use build_prompts to add a "prompt" column before Dataset creation
+# Add two columns to pandas DF: "prompt" and "labels"
 df_test = build_prompts(df_test)
-df_test.to_csv("test.csv", index=False) #save as CSV wtihout row numbers
+# df_test.to_csv("test.csv", index=False) #save as CSV wtihout row numbers
+
+#Convert pandas DF to HuggingFace Dataset object
+# Each column becomes a key in dataset 
+# So now test_dataset[i] will be a dictionary 
+# {
+#   "title": "Paper 1",
+#   "Category": "cs.AI",
+#   "Category Description": "Artificial Intelligence",
+#   "Published": "2025-01-01",
+#   "summary": "This paper ...",
+#   "prompt": "You are an AI system ... Title: Paper 1 ...",
+#   "labels": "Artificial Intelligence"
+# }
 
 test_dataset = Dataset.from_pandas(df_test)
+
+#Wrap HF Dataset in a PyTorch DataLoader, you can iterate over in batches 
 test_dataloader = DataLoader(
     test_dataset, 
-    batch_size=16, 
-    shuffle=False,
+    batch_size=16, #each batch has 16 rows 
+    shuffle=False, # Preserve order 
+    # x is a list of 16 dicts one per row in batch
+    # build a new dict where each key maps to a list of 16 values, one for each row
     collate_fn=lambda x: {k: [d[k] for d in x] for k in x[0]}
+    # {
+    # "title": ["Paper 1", "Paper 2", ..., "Paper 16"],
+    # "Category": ["cs.AI", "cs.CV", ..., "cs.LG"],
+    # "Category Description": ["Artificial Intelligence", "Computer Vision", ..., "Systems"],
+    # "summary": ["This paper ...", "Another paper ...", ..., "Paper 16 ..."],
+    # "prompt": ["You are an AI system ... Paper 1 ...", ..., "Paper 16 ..."],
+    # "labels": ["Artificial Intelligence", "Computer Vision", ..., "Systems"]
+    # }
 )
+
+#via test model, iterate over such as: 
+# for batch in test_dataloader:
+#     print(batch["title"][0])   # prints the first paper's title in this batch
+#     print(batch["prompt"][0])  # prints the first paper's prompt
+#     break  # just look at the first batch
+
 
 metrics: dict[str, float] = test_model(test_dataloader, model, tokenizer)
 print("\n=== METRICS ===")
